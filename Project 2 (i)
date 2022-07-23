@@ -1,0 +1,18 @@
+F = int(input("No.of terms :"))
+
+a, b = 0, 1
+count = 0
+
+if F <= 0:
+   print("Enter a positive integer")
+elif F == 1:
+   print("Fibonacci sequence upto",F,":")
+   print(a)
+else:
+   print("Fibonacci sequence:")
+   while count < F:
+       print(a)
+       c = a + b
+       a = b
+       b = c
+       count += 1
